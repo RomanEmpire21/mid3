@@ -215,7 +215,7 @@ int main(int argc, char *argv[])
     //This formatting will help for your unit test output
     cout << getPonderal(mass, height);
 #endif
-    
+
     cout << endl;
     return 0;
 }
@@ -248,14 +248,14 @@ void U_Test(double *values, double tolerance)
         // Take absolute value to ensure proper 
         // calculation of tolerance
         if (abs(values[idx+2] - ponderal[i]) > tolerance) {
-            cout << values[idx] << "   " << values[idx+1] << "  " << 
+                cout << values[idx] << "   " << values[idx+1] << "  " << 
                 values[idx+2] <<  "    " << ponderal[i] << 
                 "  <----- outside of tolerance\n";
             errors += 1;
         }
         else {
                 cout << values[idx] << "   " << values[idx+1] << "  " << 
-                    values[idx+2] <<  "    " << ponderal[i] << endl; 
+                values[idx+2] <<  "    " << ponderal[i] << endl; 
         }
         idx +=3;
     }
